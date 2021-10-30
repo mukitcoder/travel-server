@@ -35,8 +35,10 @@ async function run() {
     // get single service 
     app.get('/services/:id', async(req, res)=>{
         const id = req.params.id
+        console.log("getting id", id);
         const query = {_id:ObjectId(id)}
         const service = await servicesCollection.findOne(query)
+        res.json(service)
     })
     // post API
     app.post("/services", async (req, res) => {
@@ -46,6 +48,16 @@ async function run() {
         const result = await servicesCollection.insertOne(service);
         res.json(result);
     });
+    // delete API
+    app.delete('/services/:id', async(req, res)=>{
+        const id = req.params.id
+        const query = {_id:ObjectId(id)}
+        const result = await servicesCollection.deleteOne(query)
+        res.json(result)
+    })
+
+
+
   } finally {
     //   await client.close();
   }
