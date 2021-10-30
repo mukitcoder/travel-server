@@ -1,0 +1,20 @@
+{
+  "name": "the-travel-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-mukitcoder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-mukitcoder/issues"
+  },
+  "homepage": "https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-mukitcoder#readme"
+}
