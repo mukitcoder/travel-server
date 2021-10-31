@@ -4,7 +4,7 @@ const ObjectId = require("mongodb").ObjectId;
 const cors = require("cors");
 require("dotenv").config();
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 // set middleware
 app.use(cors());
@@ -96,5 +96,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log("running travel server on port", port);
-});
+  console.log(`Example app listening at http://localhost:${port}`)
+})
